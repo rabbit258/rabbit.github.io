@@ -21,10 +21,6 @@
     <link rel="icon" href="/img/favicon.png">
   
   
-      
-<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
-
-  
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -41,7 +37,7 @@
       var yiliaConfig = {
           rootUrl: '/',
           fancybox: true,
-          animate: true,
+          animate: false,
           isHome: false,
           isPost: false,
           isArchive: false,
@@ -57,9 +53,10 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
+		
         <a href="/" class="profilepic">
             
-            <img lazy-src="/img/head.jpg" class="js-avatar">
+            <img src="/img/head.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
             
         </a>
 
@@ -87,17 +84,15 @@
                         
                         </ul>
                     </nav>
-					<nav>
-							总文章数 1
-					</nav>
                     <nav class="header-nav">
                         <ul class="social">
-                            
-                                <a class="fl QQ" target="_blank" href="https://user.qzone.qq.com/1604456428/infocenter" title="QQ">QQ</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/rabbit258" title="github">github</a>
                             
                         </ul>
+						
+						<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" allowTransparency="true" style="background-color:blank" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=496869422&auto=1&height=32"></iframe>
+						
                     </nav>
                 </section>
                 
@@ -135,7 +130,7 @@
         <header id="header" class="inner">
             <a href="/" class="profilepic">
                 
-                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                    <img src="/img/head.jpg" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
                 
             </a>
             <hgroup>
@@ -158,8 +153,6 @@
             </nav>
             <nav class="header-nav">
                 <div class="social">
-                    
-                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1604456428/infocenter" title="QQ">QQ</a>
                     
                         <a class="github" target="_blank" href="https://github.com/rabbit258" title="github">github</a>
                     
@@ -334,35 +327,8 @@
 
 
 
-<div class="bdsharebuttonbox">
-	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
-	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-</div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
-
-
-    
-        <div id="gitments"></div>
-<script src="/js/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-      id: window.location.pathname,
-      owner: 'rabbit258',
-      repo: 'rabbit258.github.io',
-      oauth: {
-        client_id: '',
-        client_secret: '',
-      },
-    })
-    gitment.render('gitments')
-</script>
     
 
 
@@ -383,26 +349,6 @@
                 <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
             </div>
         </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >来访人数: 
-                            <span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>, </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
         
     </div>
 </footer>
