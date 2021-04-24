@@ -2,10 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
-  
-  
-  
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,10 +20,6 @@
   
   
   
-<link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
-
-  
-  
 <link rel="stylesheet" href="/css/style.css">
 
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
@@ -44,8 +36,9 @@
     <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
   <script>
       var yiliaConfig = {
+          rootUrl: '/',
           fancybox: true,
-          animate: true,
+          animate: false,
           isHome: true,
           isPost: false,
           isArchive: false,
@@ -61,184 +54,86 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
-        
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
         <a href="/" class="profilepic">
             
-            <img lazy-src="/img/touxiang.png" class="js-avatar">
+            <img src="/img/head.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
             
         </a>
+
         <hgroup>
-          <h1 class="header-author"><a href="/"></a></h1>
+          <h1 class="header-author"><a href="/" title="Hi Mate"></a></h1>
         </hgroup>
+
         
         
-            <form>
-                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder="搜索一下" autocomplete="off">
-            </form>
-            <div id="local-search-result"></div>
         
-        
-            <script type="text/javascript">
-                (function() {
-                    'use strict';
-                    function getMatchData(keyword, data) {
-                        var matchData = [];
-                        for(var i =0;i<data.length;i++){
-                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
-                                matchData.push(data[i])
-                        }
-                        return matchData;
-                    }
-                    var $input = $('#local-search-input');
-                    var $resultContent = $('#local-search-result');
-                    $input.keyup(function(){
-                        $.ajax({
-                            url: '/search.json',
-                            dataType: "json",
-                            success: function( json ) {
-                                var str='<ul class=\"search-result-list\">';                
-                                var keyword = $input.val().trim().toLowerCase();
-                                $resultContent.innerHTML = "";
-                                if ($input.val().trim().length <= 0) {
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                }
-                                var results = getMatchData(keyword, json);
-                                if(results.length === 0){
-                                    $resultContent.empty();
-                                    $('#switch-area').show();
-                                    return;
-                                } 
-                                for(var i =0; i<results.length; i++){
-                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
-                                }
-                                str += "</ul>";
-                                $resultContent.empty();
-                                $resultContent.append(str);
-                                $('#switch-area').hide();
-                            }
-                        });
-                    });
-                })();
-            </script>
-        
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
+
         <div id="switch-area" class="switch-area">
             <div class="switch-wrap">
                 <section class="switch-part switch-part1">
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a  href="/archives/">主页</a></li>
-                        
-                            <li><a  href="/about/">关于我</a></li>
+                            <li><a href="/Home">博客首页</a></li>
                         
                         </ul>
                     </nav>
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl github"  target="_blank" href="https://github.com/rabbit258" title="github">github</a>
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
                             
-                                <a class="fl QQ"  target="_blank" href="https://user.qzone.qq.com/1604456428?ADUIN=1604456428&ADSESSION=1619230402&ADTAG=CLIENT.QQ.5803_MyTip.0&ADPUBNO=27129&source=namecardhoverstar" title="QQ">QQ</a>
+                                <a class="fl github" target="_blank" href="https://github.com/rabbit258" title="github">github</a>
                             
                         </ul>
                     </nav>
                 </section>
                 
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        
-                    </div>
-                </section>
+                
                 
                 
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank"  class="main-nav-link switch-friends-link" href="https://blog.csdn.net/man_of_mouse?spm=1001.2101.3001.5343">csdn</a>
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://rabbit258.github.io/">name</a>
                     
                     </div>
                 </section>
                 
+
                 
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">三尺微命,一介书生</div>
+                    <div id="js-aboutme">三尺微命,一介书生.爱好斗智游戏.</div>
                 </section>
                 
             </div>
         </div>
-    </header>
+    </header>                
 </div>
-
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me"></a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
                 
-                    <img lazy-src="/img/touxiang.png" class="js-avatar">
+                    <img src="/img/head.jpg" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
                 
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
+              <h1 class="header-author"><a href="/" title="Me"></a></h1>
             </hgroup>
             
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/archives/">主页</a></li>
-                
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/Home">博客首页</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -246,13 +141,13 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="github" target="_blank" href="https://github.com/rabbit258" title="github">github</a>
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
                     
-                        <a class="QQ" target="_blank" href="https://user.qzone.qq.com/1604456428?ADUIN=1604456428&ADSESSION=1619230402&ADTAG=CLIENT.QQ.5803_MyTip.0&ADPUBNO=27129&source=namecardhoverstar" title="QQ">QQ</a>
+                        <a class="github" target="_blank" href="https://github.com/rabbit258" title="github">github</a>
                     
                 </div>
             </nav>
-        </header>
+        </header>                
     </div>
 </nav>
       <div class="body-wrap">
@@ -260,10 +155,9 @@
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a  href="/2021/04/09/hello-world/" class="article-date">
+      <a href="/2021/04/09/hello-world/" class="article-date">
       <time datetime="2021-04-09T12:31:12.055Z" itemprop="datePublished">2021-04-09</time>
 </a>
-
     </div>
   
   <div class="article-inner">
@@ -275,10 +169,9 @@
         
   
     <h1 itemprop="name">
-      <a  class="article-title" href="/2021/04/09/hello-world/">Hello World</a>
+      <a class="article-title" href="/2021/04/09/hello-world/">Hello World</a>
     </h1>
   
-
 
       </header>
       
@@ -300,6 +193,7 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
+      
       
     </div>
     
@@ -324,11 +218,8 @@
 
 
 
-
-
   
   
-
 </div>
       <footer id="footer">
     <div class="outer">
@@ -337,14 +228,14 @@
                 &copy; 2021 John Doe
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank">Hexo &nbsp;&nbsp;</a><a href="https://github.com/maochunguang" target="_blank">Blog</a> by tommy
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >极客到访数: 
+                        <span id="site-visit" >来访人数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -382,30 +273,6 @@
     </script>
 
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'xxxxx', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
-
-
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?xxxxxx";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
 
 
 
@@ -432,6 +299,7 @@ ga('send', 'pageview');
             var title = a.attr('title');
             if (title == undefined || title == "") return;
             a.data('title', title).removeAttr('title').hover(
+
             function() {
                 var offset = a.offset();
                 $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
